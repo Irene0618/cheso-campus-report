@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffd632">
+  <meta name="description" content="张馨文的 Cheso 校园推广作品汇报，包含广告片、小题大作系列海报、校园创作赛策划与创作复盘。">
+  <title>小题大作 · 张馨文的 Cheso 创意汇报</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23ffd632'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-size='47' font-family='Arial' font-weight='bold'%3Ec%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至作品内容</a>
+  <div class="reading-progress" aria-hidden="true"><span id="progress"></span></div>
+  <header class="site-header">
+    <a href="#video" class="brand" aria-label="回到汇报开头"><img src="cheso-logo.png" alt="cheso" width="110" height="30"><span>校园创意汇报</span></a>
+    <nav aria-label="汇报目录">
+      <a href="#video" class="active" aria-current="location">01 视频</a>
+      <a href="#posters">02 海报</a>
+      <a href="#plan">03 策划</a>
+      <a href="#notes">04 复盘</a>
+    </nav>
+    <button class="fullscreen-button" id="page-fullscreen" type="button" aria-label="全屏汇报"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg><span>全屏汇报</span></button>
+  </header>
+
+  <main id="main">
+    <section class="opening section" id="video" aria-labelledby="opening-title">
+      <div class="opening-topline"><span>CHESO CAMPUS LAB</span><span>张馨文 / AI 视觉设计</span></div>
+      <div class="opening-grid">
+        <div class="opening-copy">
+          <p class="eyebrow">校园推广作品提案</p>
+          <h1 id="opening-title"><span class="small-topic">“小”题</span><span class="big-work">大作<span class="yellow-period">.</span></span></h1>
+          <p class="opening-tagline">你的题目，<br>值得一份好作品。</p>
+          <p class="opening-note">一支广告片、一组校园视觉，<br>以及一次创作赛的策划尝试。</p>
+          <button class="primary-button" id="watch-film" type="button"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 9 6-9 6Z"/></svg>播放作品</button>
+        </div>
+        <div class="film-block">
+          <div class="film-topline"><span>01 / 品牌宣传片</span><span>CHESO TVC</span></div>
+          <div class="video-shell">
+            <video id="campaign-video" controls playsinline preload="metadata" poster="video-cover.jpg" aria-label="CHESO TVC 风格广告片">
+              <source src="cheso-tvc-web.mp4" type="video/mp4">
+              当前浏览器无法播放视频，请使用下方链接打开原片。
+            </video>
+          </div>
+          <div class="film-caption"><p>围绕学生群体的品牌宣传片</p><a class="text-link" href="https://github.com/Irene0618/cheso-campus-report/releases/download/v1.0/cheso-tvc-original.mp4" download="CHESO TVC风格广告片.mp4">下载原片 <span aria-hidden="true">↗</span></a></div>
+          <div class="production-stats" aria-label="视频制作记录">
+            <div><strong id="video-duration">约 1′30″</strong><span>成片时长</span></div>
+            <div><strong>16,000<span class="unit">点</span></strong><span>LibTV 积分</span></div>
+            <div><strong>200+<span class="unit">点</span></strong><span>即梦积分</span></div>
+          </div>
+          <p class="small-note">制作记录由本人提供，两种平台积分分别统计。</p>
+        </div>
+      </div>
+      <div class="section-bottomline"><span>VISUAL DESIGN / AI FILM / CAMPAIGN</span><a href="#posters">继续看校园海报 <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="section posters-section" id="posters" aria-labelledby="posters-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / 校园视觉</p><h2 id="posters-title">小事，也有大制作的排面。</h2></div><span class="section-counter">03 + 01</span></div>
+      <div class="poster-intro"><span class="letter-greeting">老师好～</span><p>这组海报以“小”题大作为主题，把 Cheso 想象成一支认真拍大片的制作团队。穿着cheso品牌黄色制服的工作人员，为校园里熟悉的小事搭景、打光、拍摄，让普通的小选题也有大制作的排面。</p></div>
+      <div class="poster-grid">
+        <figure class="poster-item">
+          <button class="poster-image" type="button" data-poster="0" aria-label="放大查看食堂鹅腿饭海报"><img src="poster-goose.png" alt="小题大作鹅腿饭海报，黄色制服的微缩摄制组围绕餐盘拍摄" loading="lazy" width="2160" height="2880"><span class="image-action">放大查看 <span aria-hidden="true">↗</span></span></button>
+          <figcaption><div class="poster-heading"><span>01</span><h3>食堂鹅腿饭</h3></div><p>午饭还没吃，排面先安排上了。导演、摄影和灯光围着一份鹅腿饭忙碌，把食堂日常拍出了大片感。想表达的是，即使选题只是一顿午饭，Cheso也能帮助你认真组织内容，做出有表现力的PPT。</p></figcaption>
+        </figure>
+        <figure class="poster-item">
+          <button class="poster-image" type="button" data-poster="1" aria-label="放大查看大学城流浪小咪海报"><img src="poster-cat.png" alt="大学城小咪海报，小猫悠闲躺着，黄色制服摄制组认真拍摄" loading="lazy" width="1086" height="1448"><span class="image-action">放大查看 <span aria-hidden="true">↗</span></span></button>
+          <figcaption><div class="poster-heading"><span>02</span><h3>大学城流浪小咪</h3></div><p>主角负责躺平，片场全员上班。校园里偶遇的小咪，这次成了镜头中心。用小猫的悠闲和工作人员的认真形成反差，把日常观察变成一份有趣的校园报告。</p></figcaption>
+        </figure>
+        <figure class="poster-item">
+          <button class="poster-image" type="button" data-poster="2" aria-label="放大查看同学们的洗澡水卡海报"><img src="poster-card.png" alt="洗澡水卡海报，摄影棚中的工作人员为日常水卡布置产品拍摄" loading="lazy" width="1086" height="1448"><span class="image-action">放大查看 <span aria-hidden="true">↗</span></span></button>
+          <figcaption><div class="poster-heading"><span>03</span><h3>同学们的洗澡水卡</h3></div><p>澡每天都在洗，余额到底去了哪里？一张普通水卡，也享受了一次产品大片的待遇。从同学们熟悉的小疑问出发，让使用记录和生活观察成为值得研究、值得展示的内容。</p></figcaption>
+        </figure>
+      </div>
+      <div class="concept-poster">
+        <button class="concept-image" data-poster="3" type="button" aria-label="放大查看校园创作计划主题海报"><img src="poster-concept.png" alt="校园创作计划主题海报，餐盘和写着今天吃什么的黄色便签" loading="lazy" width="1086" height="1448"></button>
+        <div><p class="eyebrow">另一版主题视觉</p><h3>从“今天吃什么”开始。</h3><p>一张餐盘、一张便签，呈现校园创作计划的起点。</p><button class="secondary-button" data-poster="3" type="button">查看主题海报 <span aria-hidden="true">↗</span></button></div>
+      </div>
+    </section>
+
+    <section class="section plan-section" id="plan" aria-labelledby="plan-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / 推广策划</p><h2 id="plan-title">让同学的选题，成为作品。</h2></div><a class="text-link" href="campaign-plan.docx" download="Cheso_小题大作_校园创作赛策划案.docx">下载 Word 原案 <span aria-hidden="true">↗</span></a></div>
+      <p class="section-description">面向深圳大学城学生，邀请同学自选身边的题目，用 Cheso 制作 PPT 或海报，接受作品点评，再提交评选。</p>
+      <div class="plan-facts"><div><strong>20<span>组</span></strong><p>首轮招募建议</p></div><div><strong>4<span>周</span></strong><p>比赛排期建议</p></div><div><strong>1<span>万元</span></strong><p>现金预算建议</p></div><div><strong>30<span>天</span></strong><p>活动后回访观察</p></div></div>
+      <p class="plan-caveat">以上为策划案中的待确认参数。现金预算不含产品消耗与内部工时，正式开展前需完成产品测试与资源确认。</p>
+      <div class="plan-tabs" role="tablist" aria-label="策划案查看方式"><button id="tab-slides" role="tab" aria-selected="true" aria-controls="panel-slides" tabindex="0">提案演示 <span>12 页</span></button><button id="tab-document" role="tab" aria-selected="false" aria-controls="panel-document" tabindex="-1">策划全文 <span>9 个章节</span></button></div>
+      <div class="plan-panel" id="panel-slides" role="tabpanel" aria-labelledby="tab-slides">
+        <div class="slide-stage"><button class="slide-open" id="open-slide" type="button" aria-label="放大当前提案页面"><img id="slide-image" src="slide-01.png" alt="校园创作赛提案第1页" width="1600" height="900" loading="lazy"><span class="image-action">全屏阅读 <span aria-hidden="true">↗</span></span></button></div>
+        <div class="slide-toolbar"><div class="slide-controls"><button id="slide-prev" class="icon-button" type="button" aria-label="上一页提案">←</button><span id="slide-count" aria-live="polite">01 / 12</span><button id="slide-next" class="icon-button" type="button" aria-label="下一页提案">→</button></div><a class="text-link" href="campaign-deck.pptx" download="Cheso_小题大作_校园创作赛提案.pptx">下载 PPT 原稿 <span aria-hidden="true">↗</span></a></div>
+        <div class="slide-thumbs" id="slide-thumbs" aria-label="选择提案页码"></div>
+      </div>
+      <div class="plan-panel" id="panel-document" role="tabpanel" aria-labelledby="tab-document" hidden>
+        <div class="document-layout"><nav class="document-toc" id="document-toc" aria-label="策划文章目录"></nav><article class="document-body" id="document-body"></article></div>
+        <div class="document-downloads"><a class="text-link" href="campaign-plan.pdf" target="_blank" rel="noopener">打开 PDF 阅读版 <span aria-hidden="true">↗</span></a><a class="text-link" href="campaign-plan.docx" download="Cheso_小题大作_校园创作赛策划案.docx">下载 Word 原案 <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section notes-section" id="notes" aria-labelledby="notes-title">
+      <div class="section-heading"><div><p class="eyebrow">04 / 制作复盘</p><h2 id="notes-title">作品之外，想向老师请教。</h2></div><button class="text-button" id="copy-notes" type="button">复制这段话 <span aria-hidden="true">↗</span></button></div>
+      <div class="letter-layout"><div class="letter-aside"><span class="large-quote" aria-hidden="true">“</span><p>关于创作的投入，<br>也关于还需打磨的部分。</p><span>张馨文</span></div><div class="letter-body" id="message-text">
+        <p class="salutation">老师早！</p>
+        <p>这次的推广视频和策划案发给您，辛苦您查收，也谢谢您给我这次笔试机会🌹</p>
+        <p>视频成片约1分30秒。我在前期的画面构思、控制图和提示词设计上投入了较多时间，希望在保证视觉效果的同时，减少无效生成。整个生成过程使用了约16000点 LibTV 积分和200多点即梦积分，希望通过这支视频展示我在视觉表达、动态节奏和AI制作方面的能力。</p>
+        <p>这次也是我第一次围绕AI Agent产品做校园推广策划。完成后复盘，我发现视频与策划案的定位还没有充分统一。视频更接近面向广泛学生群体的品牌宣传片，策划案则尝试聚焦具体使用场景，两者之间还需要进一步调整。而且这次我把更多精力放在了视频制作上，在策划案的目标人群、使用场景和产品价值的表达上，还需要继续打磨。</p>
+        <p class="question-paragraph">我想认真向您请教，从实际推广的角度看，这份策划案最需要优先调整的是什么？尤其想听听您对目标人群和使用场景的判断，以及目前的创意是否清楚地表达了产品价值。您方便时指出一两处关键问题，对我后续修改会很有帮助。谢谢老师！</p>
+      </div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><img src="cheso-logo.png" alt="cheso" width="110" height="30"><span>张馨文 · 校园推广作品汇报</span><a href="#video">回到开头 ↑</a></footer>
+
+  <dialog id="media-dialog" class="media-dialog" aria-labelledby="viewer-title"><div class="viewer-header"><div><span id="viewer-counter"></span><h2 id="viewer-title">海报预览</h2></div><div class="viewer-actions"><button id="viewer-zoom" type="button">查看细节</button><a id="viewer-download" href="#" download>下载原图</a><button id="viewer-close" class="close-button" type="button" aria-label="关闭预览" autofocus>×</button></div></div><div class="viewer-canvas" id="viewer-canvas"><img id="viewer-image" alt=""></div><div class="viewer-footer"><button id="viewer-prev" type="button" aria-label="上一张">← 上一张</button><span>左右键切换 · Esc 关闭</span><button id="viewer-next" type="button" aria-label="下一张">下一张 →</button></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
