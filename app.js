@@ -231,19 +231,4 @@
   });
   renderDocument(0);
 
-  $('#copy-notes').addEventListener('click', async () => {
-    const text = [...$('#message-text').querySelectorAll('p')].map(p => p.textContent).join('\n\n');
-    try {
-      if (!navigator.clipboard) throw new Error('Clipboard unavailable');
-      await navigator.clipboard.writeText(text);
-      toast('已复制给老师的话');
-    } catch (_) {
-      const range = document.createRange();
-      range.selectNodeContents($('#message-text'));
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-      toast('已选中这段话，请使用复制快捷键。');
-    }
-  });
 })();
